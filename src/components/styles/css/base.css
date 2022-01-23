@@ -1,0 +1,264 @@
+html,
+body,
+div,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+tr,
+th,
+td,
+table{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html{
+  overflow: auto !important;
+  font-size: 10px;
+}
+
+body{
+  line-height: 1;
+  background: #ffffff;
+  color: #666666;
+  float: left;
+  width: 100%;
+  padding: 0 !important;
+}
+
+ol,
+ul,
+li{
+  list-style: none;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+input{
+  outline: none;
+}
+
+#root{
+  float: left;
+  width: 100%;
+}
+
+.wrapper{
+  min-height: 85vh;
+  float: left;
+  width: 100%;
+}
+
+.container-fluid{
+  float: left;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+button:focus{
+  outline: none !important;
+}
+
+.loaderContainer{
+  width: 100%;
+  height: 100%;
+  background: #efefef;
+  opacity: 0.85;
+  position: absolute;
+  z-index: 999999;
+  text-align: center;
+}
+
+.loaderContainer img{
+  top: 45%;
+  position: absolute;
+  left: 50%;
+  width: 50px;
+}
+
+.headerContainer{
+  width: 100%;
+  float: left;
+  border-bottom: 5px solid #9f9d9d;
+  background: #efefef;
+  height: auto;
+  padding: 10px 20px;
+}
+
+.headerContainer .cartIconContainer{
+  float: right;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.headerContainer .cartIconContainer img{
+  width: 30px;
+  height: 30px;
+}
+
+.headerContainer .cartItemContainer {
+  float: right;
+  padding: 5px;
+  width:80px;
+}
+
+.cartItemContainer .productPrice{
+  width: 100%;
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+  color: #151723;
+  font-family: sans-serif;
+  padding-top: 0px;
+  text-align: right;
+}
+
+.cartItemContainer .productQtyWrapper{
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.cartItemContainer .productQtyWrapper .productQty{
+  width: 57px;
+  float: left;
+  font-size: 14px;
+  font-weight: 700;
+  color: #151723;
+  font-family: sans-serif;
+  padding: 0;
+  text-align: right;
+  cursor: pointer;
+}
+
+.cartItemContainer .productQtyWrapper .arrow-down{
+  float: left;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #555;
+  margin-top: 4px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.cartItemContainer .productQtyWrapper .popuptext {
+  visibility: hidden;
+  width: 260px;
+  background-color: #7ba9bd;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  left: 14%;
+  margin-left: -180px;
+}
+
+.cartItemContainer .productQtyWrapper .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 15px;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #7ba9bd transparent;
+}
+
+.cartItemContainer .productQtyWrapper .show{
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn{
+  from{opacity: 0}
+  to{opacity: 0}
+}
+@keyframes fadeIn{
+  from{opacity: 0}
+  to{opacity: 0}
+}
+
+.cartItemContainer .productQtyWrapper .popuptext .productListRow{
+  border-bottom: 1px solid #9f9d9d;
+  background: #7ba9bd;
+  border-radius: 4px;
+}
+
+.cartItemContainer .productQtyWrapper .popuptext .productListRow:last-child{
+  border-bottom: 0px !important;
+}
+
+.cartItemContainer .productQtyWrapper .popuptext .productInfo{
+  width: 120px;
+}
+
+.cartItemContainer .productQtyWrapper .popuptext .productInfo .productName, .cartItemContainer .productQtyWrapper .popuptext .productInfo .productPrice{
+  font-size: 15px;
+  font-weight: 700;
+  color: #151723;
+  text-align: left;
+  padding-bottom: 2px;
+}
+
+.cartItemContainer .productQtyWrapper .popuptext .productQty{
+  width: 50px;
+  font-size: 12px;
+  margin-top: 8px;
+  cursor: default;
+}
+
+.productDeleteIcon{
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: sans-serif;
+  float: left;
+  padding: 15px 0 0 0;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}

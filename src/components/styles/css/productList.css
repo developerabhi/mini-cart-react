@@ -1,0 +1,115 @@
+.noProductAvailable{
+  width: 100%;
+  float: left;
+  margin-top: 100px;
+  text-align: center;
+}
+.noProductAvailable img{
+  width: 100px;
+  height: 100px;
+  float: none;
+  margin: 0 auto;
+}
+.noProductAvailable p{
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #999fa5;
+  margin-top: 20px;
+}
+
+.productListWrapper{
+  width: 100%;
+  float: left;
+  margin-top:20px;
+}
+
+.productListContainer{
+  width: 450px;
+  float: none;
+  margin: 0 auto;
+}
+
+.productListRow{
+  border-bottom: 3px solid #9f9d9d;
+  background: #efefef;
+  padding: 10px;
+  float: left;
+  width: 100%;
+}
+
+.productImg{
+  width: 50px;
+  float: left;
+}
+
+.productImg img{
+  width: 50px;
+}
+
+.productInfo{
+  width: 150px;
+  float: left;
+  text-align: left;
+  word-wrap: break-word;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.productName, .productDesc{
+  width: 100%;
+  float: left;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: #151723;
+}
+
+.productDesc{
+  font-size: 9px !important;
+  font-weight: 400 !important;
+  color: #999fa5 !important;
+}
+
+.productQty{
+  width: 180px;
+  float: left;
+  padding: 10px 40px;
+}
+
+.productPrice{
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #151723;
+  float: right;
+  padding-top: 15px;
+}
+
+.decreaseItem, .increaseItem{
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  color: #151723;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 3px;
+  float: left;
+  border:1px solid #151723;
+  margin-top: 1px;
+  font-family: sans-serif;
+}
+
+.inputBox{
+  width: 45px;
+  padding: 3px;
+  float: left;
+  font-family: sans-serif;
+}
+
+.inputBox input{
+  width: 40px;
+}
